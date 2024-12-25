@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>html dasar</title>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="1.css">
+ </head>
+ <body>
+       <div class="awal">
+         <h2>Hypertext Preprocessor <br>(PHP)</h2>
+         <div class="content">
+         <img src="6.jpg" alt="HTML">
+         <p>Rasmus Lerdorf</p>
+         </div>
+    </div>
+    <div class="container">
+      <header>
+        <h1>Materi tentang PHP</h1>
+        </header>
+        
+        <section>
+            <h2>Pengenalan PHP</h2>
+            <p>PHP (Hypertext Preprocessor) adalah bahasa pemrograman server-side yang sering digunakan untuk pengembangan web.</p>
+        </section>
+
+        <section>
+            <h2>Instalasi PHP</h2>
+            <p>Anda dapat mengunduh PHP dari <a href="https://www.php.net" target="_blank">situs resmi PHP</a>. Untuk pengembangan lokal, Anda dapat menggunakan XAMPP atau WAMP.</p>
+        </section>
+
+        <section>
+            <h2>Struktur Dasar PHP</h2>
+            <pre>
+&lt;?php
+echo "Hello, World!";
+?&gt;
+<img src="666.jpeg" alt="gambar">
+            </pre>
+        </section>
+
+        <section>
+            <h2>Variabel dan Tipe Data</h2>
+            <pre>
+$nama = "adi"; // String
+$umur = 16; // Integer
+$tinggi = 1.75; // Float
+$mahasiswa = true; // Boolean
+            </pre>
+        </section>
+
+        <section>
+            <h2>Fungsi</h2>
+            <pre>
+function greet($name) {
+    return "Hello, $name!";
+}
+
+echo greet("adi");
+            </pre>
+        </section>
+
+        <section>
+            <h2>Struktur Kontrol</h2>
+            <pre>
+if ($umur >= 16) {
+    echo "Dewasa";
+} else {
+    echo "Anak-anak";
+}
+<img src="66.jpeg" alt="gambar">
+            </pre>
+        </section>
+
+        <section>
+            <h2>Looping</h2>
+            <pre>
+for ($i = 0; $i < 5; $i++) {
+    echo $i;
+}
+
+while ($umur < 30) {
+    echo $umur;
+    $umur++;
+}
+            </pre>
+        </section>
+
+        <section>
+            <h2>Array dan Associative Array</h2>
+            <pre>
+$array = array("apel", "jeruk", "pisang");
+
+$associativeArray = array(
+    "nama" => "adi",
+    "umur" => 16
+);
+echo $associativeArray["nama"];
+            </pre>
+        </section>
+
+        <section>
+            <h2>Superglobals</h2>
+            <pre>
+echo $_SERVER['PHP_SELF']; // Menampilkan nama file saat ini
+echo $_GET['nama']; // Mengakses data dari URL
+echo $_POST['nama']; // Mengakses data dari form
+            </pre>
+        </section>
+
+        <section>
+            <h2>Penanganan Formulir</h2>
+            <pre>
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    $nama = $_POST['nama'];
+    echo "Nama Anda adalah: $nama";
+}
+
+&lt;form method="post" action="process.php"&gt;
+    &lt;input type="text" name="nama"&gt;
+    &lt;input type="submit" value="Kirim"&gt;
+&lt;/form&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>Koneksi Database dengan PDO</h2>
+            <pre>
+try {
+    $pdo = new PDO('mysql:host=localhost;dbname=database_name', 'username', 'password');
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $stmt = $pdo->query("SELECT * FROM users");
+
+    while ($row = $stmt->fetch()) {
+        echo $row['name'];
+    }
+} catch (PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+}
+            </pre>
+        </section>
+
+        <section>
+            <h2>Penanganan Kesalahan</h2>
+            <pre>
+set_error_handler(function ($errno, $errstr) {
+    echo "Error: [$errno] $errstr";
+});
+
+echo $undefinedVariable; // Ini akan memicu kesalahan
+            </pre>
+        </section>
+        <button onclick="window.location.href='Index.html'">back<br>&larr;</button>
+    </div>
+    <footer>
+        <div class="footer-content">
+          <p>&copy; 2024 &rbarr; <span>2025</span> <br>daeng&HorizontalLine;<span>adi</span></p>
+          <button id="back-to-top">︽</button>
+        </div>
+       <!--social-->
+     <div class="social-icons">
+     <a href="#"><i class="fab fa-whatsapp"></i></a>
+     <a href="#"><i class="fab fa-facebook-f"></i></a>
+     <a href="#"><i class="fab fa-twitter"></i></a>
+     <a href="#"><i class="fab fa-youtube"></i></a>
+     <a href="#"><i class="fab fa-github"></i></a>
+     <a href="#"><i class="fab fa-instagram"></i></a>
+   
+     </div>
+     </footer>
+       <script src="1.js"></script>
+     </body>
+   </html>

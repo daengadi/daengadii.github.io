@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>html dasar</title>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="1.css">
+ </head>
+ <body>
+       <div class="awal">
+         <h2>Cascading Style Sheets<br>(CSS)</h2>
+         <div class="content">
+         <img src="2.jpeg" alt="HTML">
+         <p>Håkon Wium Lie</p>
+         </div>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Materi tentang CSS</h1>
+        </header>
+
+        <section>
+            <h2>Pengenalan CSS</h2>
+            <p>CSS (Cascading Style Sheets) digunakan untuk mendesain dan mengatur tata letak halaman web.</p>
+            <img src="22.jpeg" alt="gambar">
+        </section>
+
+        <section>
+            <h2>Sejarah Singkat CSS</h2>
+            <p>
+                CSS pertama kali diperkenalkan oleh Håkon Wium Lie pada tahun 1994. Tujuannya adalah untuk memisahkan konten dari presentasi, 
+                sehingga memudahkan pengelolaan dan pemeliharaan situs web. Sejak saat itu, CSS terus berkembang, dengan versi terbaru seperti CSS3 
+                yang menawarkan berbagai fitur baru seperti animasi, transisi, dan model layout yang lebih fleksibel.
+            </p>
+        </section>
+
+        <section>
+            <h2>Menambahkan CSS</h2>
+            <pre>
+Inline: &lt;h1 style="color:blue;"&gt;Judul&lt;/h1&gt;
+Internal: &lt;style&gt;h1 { color: blue; }&lt;/style&gt;
+External: &lt;link rel="stylesheet" href="style.css"&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>Selektor CSS</h2>
+            <pre>
+/* Selektor Kelas */
+.classname {
+    color: red;
+}
+
+/* Selektor ID */
+#idname {
+    font-size: 20px;
+}
+
+/* Selektor Elemen */
+p {
+    margin: 10px;
+}
+            </pre>
+        </section>
+
+        <section>
+            <h2>Layout dengan Flexbox</h2>
+            <pre>
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    flex: 1;
+    margin: 10px;
+}
+            </pre>
+        </section>
+
+        <section>
+            <h2>Layout dengan CSS Grid</h2>
+            <pre>
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+}
+            </pre>
+        </section>
+
+        <section>
+            <h2>Properti CSS Penting</h2>
+            <ul>
+                <li>color: Mengatur warna teks.</li>
+                <li>background-color: Mengatur warna latar belakang.</li>
+                <li>font-size: Mengatur ukuran font.</li>
+                <li>margin: Mengatur ruang di luar elemen.</li>
+                <li>padding: Mengatur ruang di dalam elemen.</li>
+                <li>border: Mengatur garis tepi elemen.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Animasi dan Transisi</h2>
+            <h3>Contoh Transisi:</h3>
+            <pre>
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: background-color 0.5s;
+}
+
+.box:hover {
+    background-color: blue;
+}
+<img src="666666.jpeg" alt="gambar">
+            </pre>
+
+            <h3>Contoh Animasi:</h3>
+            <pre>
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+.animated-box {
+    width: 100px;
+    height: 100px;
+    animation: example 4s infinite;
+}
+<img src="2222222.jpeg" alt="gambar">
+            </pre>
+        </section>
+
+        <section>
+            <h2>Contoh Kode CSS:</h2>
+            <pre>
+body { background-color: #f4f4f4; }
+            </pre>
+        </section>
+
+        <button onclick="window.location.href='Index.html'">back<br>&larr;</button>
+    </div>
+    <footer>
+        <div class="footer-content">
+          <p>&copy; 2024 &rbarr; <span>2025</span> <br>daeng&HorizontalLine;<span>adi</span></p>
+          <button id="back-to-top">︽</button>
+        </div>
+       <!--social-->
+     <div class="social-icons">
+     <a href="#"><i class="fab fa-whatsapp"></i></a>
+     <a href="#"><i class="fab fa-facebook-f"></i></a>
+     <a href="#"><i class="fab fa-twitter"></i></a>
+     <a href="#"><i class="fab fa-youtube"></i></a>
+     <a href="#"><i class="fab fa-github"></i></a>
+     <a href="#"><i class="fab fa-instagram"></i></a>
+   
+     </div>
+     </footer>
+       <script src="1.js"></script>
+     </body>
+   </html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>html dasar</title>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="1.css">
+ </head>
+ <body>
+       <div class="awal">
+         <h2>Si Plus Plus<br>(CC)</h2>
+         <div class="content">
+         <img src="4.jpeg" alt="HTML">
+         <p> Bjarne Stroustrup</p>
+         </div>
+    </div>
+    <div class="container">
+      <header>
+        <h1>Materi tentang C++</h1>
+        </header>
+
+        <section>
+            <h2>Pengenalan C++</h2>
+            <p>C++ adalah bahasa pemrograman yang dikembangkan oleh Bjarne Stroustrup pada tahun 1985. C++ adalah bahasa yang berorientasi objek dan merupakan pengembangan dari bahasa C, yang menambahkan fitur-fitur baru seperti kelas dan objek.</p>
+        </section>
+
+        <section>
+            <h2>Sejarah Singkat C++</h2>
+            <p>C++ awalnya dikembangkan sebagai ekstensi dari C untuk mendukung pemrograman berorientasi objek. Seiring berjalannya waktu, C++ telah menjadi salah satu bahasa pemrograman yang paling banyak digunakan di berbagai bidang.</p>
+             <img src="44.jpeg" alt="gambar">
+        </section>
+
+        <section>
+            <h2>Struktur Dasar Program C++</h2>
+            <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "Hello, World!" &lt;&lt; endl;
+    return 0;
+}
+            </pre>
+        </section>
+
+        <section>
+            <h2>Elemen Penting dalam C++</h2>
+            <ul>
+                <li>Header Files</li>
+                <li>Main Function</li>
+                <li>Variables</li>
+                <li>Data Types</li>
+                <li>Control Statements</li>
+                <li>Classes</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contoh Variabel dan Loop</h2>
+            <pre>
+int age = 16;
+string name = "adi";
+
+for (int i = 0; i &lt; 5; i++) {
+    cout &lt;&lt; "Iterasi ke-" &lt;&lt; i &lt;&lt; endl;
+}
+            </pre>
+        </section>
+
+        <section>
+            <h2>Struktur Kontrol</h2>
+            <h3>If-Else</h3>
+            <pre>
+if (age &gt;= 16) {
+    cout &lt;&lt; "Dewasa" &lt;&lt; endl;
+} else {
+    cout &lt;&lt; "Anak-anak" &lt;&lt; endl;
+}
+            </pre>
+
+            <h3>Switch</h3>
+            <pre>
+switch (age) {
+    case 16:
+        cout &lt;&lt; "Usia 16 tahun" &lt;&lt; endl;
+        break;
+    default:
+        cout &lt;&lt; "Usia tidak terdefinisi" &lt;&lt; endl;
+}
+            </pre>
+        </section>
+
+        <section>
+            <h2>Penanganan Exception</h2>
+            <pre>
+try {
+    throw runtime_error("Kesalahan terjadi!");
+} catch (const runtime_error &e) {
+    cout &lt;&lt; "Exception: " &lt;&lt; e.what() &lt;&lt; endl;
+}
+            </pre>
+        </section>
+
+        <section>
+            <h2>Pemrograman Berorientasi Objek</h2>
+            <pre>
+class Person {
+    string name;
+    int age;
+
+public:
+    Person(string n, int a) {
+        name = n;
+        age = a;
+    }
+
+    void display() {
+        cout &lt;&lt; "Nama: " &lt;&lt; name &lt;&lt; ", Umur: " &lt;&lt; age &lt;&lt; endl;
+    }
+};
+           <img src="444.jpeg" alt="gambar">
+            </pre>
+        </section>
+        <button onclick="window.location.href='Index.html'">back<br>&larr;</button>
+    </div>
+    <footer>
+        <div class="footer-content">
+          <p>&copy; 2024 &rbarr; <span>2025</span> <br>daeng&HorizontalLine;<span>adi</span></p>
+          <button id="back-to-top">︽</button>
+        </div>
+       <!--social-->
+     <div class="social-icons">
+     <a href="#"><i class="fab fa-whatsapp"></i></a>
+     <a href="#"><i class="fab fa-facebook-f"></i></a>
+     <a href="#"><i class="fab fa-twitter"></i></a>
+     <a href="#"><i class="fab fa-youtube"></i></a>
+     <a href="#"><i class="fab fa-github"></i></a>
+     <a href="#"><i class="fab fa-instagram"></i></a>
+   
+     </div>
+     </footer>
+       <script src="1.js"></script>
+     </body>
+   </html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>html dasar</title>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="1.css">
+ </head>
+ <body>
+       <div class="awal">
+         <h2>Python<br>(py)</h2>
+         <div class="content">
+         <img src="3.jpeg" alt="HTML">
+         <p>Guido van Rossum</p>
+         </div>
+    </div>
+    <div class="container">
+      <header>
+        <h1>Materi tentang Python</h1>
+       </header>
+        <h2>Pengenalan Python</h2>
+        <p>Python adalah bahasa pemrograman tingkat tinggi yang terkenal dengan sintaksnya yang sederhana dan mudah dibaca.</p>
+
+        <h2>Instalasi Python</h2>
+        <p>Anda dapat mengunduh Python dari <a href="https://www.python.org/" target="_blank">situs resmi Python</a>.</p>
+
+        <h2>Struktur Dasar Python</h2>
+        <pre>
+# Ini adalah komentar
+print("Hello, World!")
+        </pre>
+
+        <h2>Variabel dan Tipe Data</h2>
+        <pre>
+name = "adi"  # String
+age = 16            # Integer
+height = 1.75       # Float
+is_student = True   # Boolean
+        </pre>
+
+        <h2>Fungsi</h2>
+        <pre>
+def greet(name):
+    return f"Hello, {name}!"
+
+print(greet("adi"))
+        </pre>
+
+        <h2>Struktur Kontrol</h2>
+        <pre>
+if age >= 16:
+    print("Dewasa")
+else:
+    print("Anak-anak")
+        </pre>
+
+        <h2>Looping</h2>
+        <pre>
+for i in range(5):
+    print(i)
+
+while age < 16:
+    print(age)
+        </pre>
+
+        <h2>List, Tuple, dan Dictionary</h2>
+        <pre>
+# List
+fruits = ["apel", "jeruk", "pisang"]
+
+# Tuple
+coordinates = (10.0, 20.0)
+
+# Dictionary
+person = {"name": "adi", "age": 16}
+print(person["name"])
+        </pre>
+
+        <h2>Modul dan Pustaka Eksternal</h2>
+        <pre>
+import math
+
+print(math.sqrt(16))  # Menghitung akar kuadrat
+
+# Untuk menginstal pustaka eksternal, gunakan pip:
+pip install nama_pustaka
+        </pre>
+
+        <h2>Pemrograman Berorientasi Objek (OOP)</h2>
+        <pre>
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        return f"Hello, my name is {self.name}."
+
+hanna = Person("adi", 16)
+print(hanna.greet())
+        </pre>
+
+        <h2>Penanganan Kesalahan</h2>
+        <pre>
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Tidak bisa membagi dengan nol!")
+        </pre>
+        <button onclick="window.location.href='Index.html'">back<br>&larr;</button>
+      </div>
+      <footer>
+        <div class="footer-content">
+          <p>&copy; 2024 &rbarr; <span>2025</span> <br>daeng&HorizontalLine;<span>adi</span></p>
+          <button id="back-to-top">︽</button>
+        </div>
+       <!--social-->
+     <div class="social-icons">
+     <a href="#"><i class="fab fa-whatsapp"></i></a>
+     <a href="#"><i class="fab fa-facebook-f"></i></a>
+     <a href="#"><i class="fab fa-twitter"></i></a>
+     <a href="#"><i class="fab fa-youtube"></i></a>
+     <a href="#"><i class="fab fa-github"></i></a>
+     <a href="#"><i class="fab fa-instagram"></i></a>
+   
+     </div>
+     </footer>
+       <script src="1.js"></script>
+     </body>
+   </html>

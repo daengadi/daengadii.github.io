@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>html dasar</title>
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+ <link rel="stylesheet" href="1.css">
+ </head>
+ <body>
+       <div class="awal">
+         <h2>Hyper Text Markup Language<br>(HTML)</h2>
+         <div class="content">
+         <img src="1.jpeg" alt="HTML">
+         <p> Tim Berners-Lee</p>
+         </div>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Materi tentang HTML</h1>
+        </header>
+
+        <section>
+            <h2>Pengenalan HTML</h2>
+            <p>HTML (HyperText Markup Language) adalah bahasa markup yang digunakan untuk membuat struktur halaman web.</p>
+            <img src="11.jpeg" alt="Gambar"
+        </section>
+
+        <section>
+            <h2>Sejarah Singkat HTML</h2>
+            <p>
+                HTML pertama kali dikembangkan oleh Tim Berners-Lee pada tahun 1991 sebagai cara untuk mengatur dan menghubungkan dokumen di web.
+                Versi pertama HTML adalah sederhana dan hanya mendukung teks dan link. Seiring perkembangan web, HTML terus diperbarui,
+                dan saat ini kita menggunakan HTML5, yang memperkenalkan elemen multimedia dan peningkatan fungsionalitas.
+            </p>
+        </section>
+
+        <section>
+            <h2>Struktur Dasar HTML</h2>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+    &lt;title&gt;Judul Halaman&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+<img src="11111111.jpeg" alt="Gambar">
+            </pre>
+        </section>
+
+        <section>
+            <h2>Elemen Penting</h2>
+            <ul>
+                <li>&lt;h1&gt; hingga &lt;h6&gt;: Judul</li>
+                <li>&lt;p&gt;: Paragraf</li>
+                <li>&lt;a&gt;: Tautan</li>
+                <li>&lt;img&gt;: Gambar</li>
+                <li>&lt;ul&gt; dan &lt;ol&gt;: Daftar</li>
+                <li>&lt;table&gt;: Tabel</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contoh Penggunaan Daftar dan Tabel</h2>
+            <h3>Daftar Tidak Terurut:</h3>
+            <pre>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+            </pre>
+
+            <h3>Tabel:</h3>
+            <pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nama&lt;/th&gt;
+        &lt;th&gt;Umur&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;daeng adi&lt;/td&gt;
+        &lt;td&gt;16&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>Atribut HTML</h2>
+            <p>
+                Atribut digunakan untuk memberikan informasi tambahan tentang elemen HTML. Atribut ditulis di dalam tag pembuka.
+                Contoh atribut yang umum digunakan adalah href pada tautan dan src pada gambar.
+            </p>
+            <pre>
+&lt;a href="https://www.example.com"&gt;Kunjungi Situs&lt;/a&gt;
+&lt;img src="gambar.jpg" alt="Deskripsi Gambar"&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>Elemen Multimedia</h2>
+            <h3>Contoh Video:</h3>
+            <pre>
+&lt;video width="320" height="240" controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Browser Anda tidak mendukung video tag.
+&lt;/video&gt;
+            </pre>
+
+            <h3>Contoh Audio:</h3>
+            <pre>
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    Browser Anda tidak mendukung audio tag.
+&lt;/audio&gt;
+            </pre>
+        </section>
+
+        <section>
+            <h2>Formulir</h2>
+            <p>Formulir digunakan untuk mengumpulkan input dari pengguna. Berikut adalah contoh formulir sederhana:</p>
+            <pre>
+&lt;form action="/submit" method="post"&gt;
+    &lt;label for="nama"&gt;Nama:&lt;/label&gt;
+    &lt;input type="text" id="nama" name="nama"&gt;
+    &lt;input type="submit" value="Kirim"&gt;
+&lt;/form&gt;
+            </pre>
+        </section>
+           <button onclick="window.location.href='Index.html'">back<br>&larr;</button>
+    </div>
+    <footer>
+        <div class="footer-content">
+          <p>&copy; 2024 &rbarr; <span>2025</span> <br>daeng&HorizontalLine;<span>adi</span></p>
+          <button id="back-to-top">︽</button>
+        </div>
+       <!--social-->
+     <div class="social-icons">
+     <a href="#"><i class="fab fa-whatsapp"></i></a>
+     <a href="#"><i class="fab fa-facebook-f"></i></a>
+     <a href="#"><i class="fab fa-twitter"></i></a>
+     <a href="#"><i class="fab fa-youtube"></i></a>
+     <a href="#"><i class="fab fa-github"></i></a>
+     <a href="#"><i class="fab fa-instagram"></i></a>
+   
+     </div>
+     </footer>
+       <script src="1.js"></script>
+     </body>
+   </html>

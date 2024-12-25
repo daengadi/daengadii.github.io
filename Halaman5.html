@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="1.css">
+    <title>Materi tentang JavaScript</title>
+</head>
+ <body>
+       <div class="awal">
+         <h2>JavaScript<br>(js)</h2>
+         <div class="content">
+         <img src="5.jpeg" alt="js">
+         <p>Brendan Eich</p>
+         </div>
+    </div>
+  <header>
+    <h1>Materi tentang JavaScript</h1>
+    </header>
+    <h2>Pengenalan JavaScript</h2>
+    <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web interaktif.</p>
+    
+    <h2>Menjalankan JavaScript</h2>
+    <p>JavaScript dapat ditambahkan ke HTML menggunakan:</p>
+    <ul>
+        <li>Inline: &lt;button onclick="alert('Hello!')"&gt;Klik Saya&lt;/button&gt;</li>
+        <li>Internal: &lt;script&gt;alert('Hello!');&lt;/script&gt;</li>
+        <li>External: &lt;script src="script.js"&gt;&lt;/script&gt;</li>
+    </ul>
+    
+    <h2>Contoh Kode JavaScript</h2>
+    <pre>
+console.log('Hello World');
+    </pre>
+    
+    <h2>Variabel</h2>
+    <pre>
+let name = 'adi';
+    </pre>
+    
+    <h2>Tipe Data</h2>
+    <p>JavaScript memiliki beberapa tipe data dasar:</p>
+    <ul>
+        <li>String: Teks, misalnya: 'Hello'</li>
+        <li>Number: Angka, misalnya: 42</li>
+        <li>Boolean: Nilai true atau false</li>
+        <li>Object: Koleksi nilai dalam pasangan kunci-nilai</li>
+        <li>Array: Koleksi terurut dari nilai</li>
+    </ul>
+    
+    <h2>Fungsi</h2>
+    <p>Fungsi sederhana:</p>
+    <pre>
+function greet() {
+    console.log('Hello!');
+}
+<img src="55.jpeg" alt="gamgar">
+    </pre>
+    <p>Fungsi dengan parameter:</p>
+    <pre>
+function greet(name) {
+    console.log('Hello, ' + name + '!');
+}
+    </pre>
+    
+    <h2>Struktur Kontrol</h2>
+    <pre>
+if (name === 'adi') {
+    console.log('Welcome back!');
+}
+
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+    </pre>
+    
+    <h2>Manipulasi DOM</h2>
+    <pre>
+document.getElementById('myElement').innerHTML = 'Hello!';
+    </pre>
+    
+    <h2>Event Handling</h2>
+    <pre>
+document.getElementById('myButton').addEventListener('click', function() {
+    alert('Button clicked!');
+});
+    </pre>
+    
+    <h2>Objek</h2>
+    <pre>
+let person = {
+    name: 'adi',
+    age: 16,
+    greet: function() {
+        console.log('Hello, ' + this.name);
+    }
+};
+
+person.greet(); // Memanggil metode greet
+    </pre>
+    
+    <h2>Array</h2>
+    <pre>
+let fruits = ['Apple', 'Banana', 'Cherry'];
+console.log(fruits[0]); // Output: Apple
+    </pre>
+    
+    <h2>Penggunaan API</h2>
+    <pre>
+fetch('https://api.example.com/data')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error('Error:', error));
+    </pre>
+    <button onclick="window.location.href='Index.html'">back<br>&larr;</button>
+</div>
+<footer>
+    <div class="footer-content">
+      <p>&copy; 2024 &rbarr; <span>2025</span> <br>daeng&HorizontalLine;<span>adi</span></p>
+      <button id="back-to-top">︽</button>
+    </div>
+   <!--social-->
+ <div class="social-icons">
+ <a href="#"><i class="fab fa-whatsapp"></i></a>
+ <a href="#"><i class="fab fa-facebook-f"></i></a>
+ <a href="#"><i class="fab fa-twitter"></i></a>
+ <a href="#"><i class="fab fa-youtube"></i></a>
+ <a href="#"><i class="fab fa-github"></i></a>
+ <a href="#"><i class="fab fa-instagram"></i></a>
+
+ </div>
+ </footer>
+   <script src="1.js"></script>
+ </body>
+</html>

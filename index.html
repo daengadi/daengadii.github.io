@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title> portofolio</title>
+ <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="header"></div>
+    <header>
+      <div class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRreC3pHJbF_9ewKZ-Tt75A-g9Bim2ZulZvVg&s" alt="adi">
+        <a href="#"><u>Adi Gz</u></a>
+      </div>
+      <nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          &#9776;
+        </button>
+        <ul class="nav-links">
+          <li><a href="#main">
+          <i class="fas fa-home"></i>Home</a></li>
+          <li><a href="#about">
+          <i class="fas fa-user"></i>About</a></li>
+          <li><a href="#portfolio">
+          <i class="fas fa-briefcase"></i>project</a></li>
+          <li><a href="#blog">
+          <i class="fas fa-blog"></i>blog</a></li>
+          <li><div class="mode-switcher">
+            <label for="mode-select"></label>
+            <select id="mode-select">
+              <option value="light">1</option>
+              <option value="dark">2</option>
+              <option value="luxury">3</option>
+            </select>
+          </div></li>
+        </ul>
+      </nav>
+    </header>  
+       <!--- jam --->
+       <div class="main" id="main">
+        <div class="jam-digital">
+          <div class="jam-digital">
+            <div class="kotak">
+              <p id="jam"></p>
+              </div>
+                 <div class="kotak">
+              <p id="menit"></p>
+            </div>
+               <div class="kotak">
+              <p id="detik"></p>
+          </div>
+        </div>
+      </div>
+       <!--- text --->
+       <div class="text-container">
+         <p data-aos="fade-right">hallo</p>
+         <p data-aos="fade-right">I&#8217;M Adi</p>
+         <div class="typewriter">
+           <h2 data-aos="fade-right">SEO Technical Writer & Developer</h2>
+           </div>
+  <p data-aos="fade-right">An aquarius boy who loves music, watching movies and
+  <br data-aos="fade-right">of course writing.</p>
+  <audio data-aos="zoom-in" data-aos-delay="500" id="audio" controls autoplay>
+    <source id="audioSource" src="ssstik.io_1734822908436.mp3" type="audio/mpeg">
+</audio>
+  </div>
+    </div>
+  </div>
+  </div>
+  <!-- model -->
+   <div class="profile-image">
+    <img data-aos="fade-left" src="web.png" alt="adi">
+   </div>
+   <!--about-->
+   <div class="about-me" id="about">
+    <div class="container">
+      <!-- About Me Section -->
+      <div data-aos="fade-up" class="about">
+          <img data-aos="zoom-in" data-aos-delay="500" src="adi.jpeg" alt="Profile Picture" onclick="openModal(this)">
+          <div class="about-content">
+              <h2>About Me&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</h2>
+              <p data-aos="fade-up">hallo,<br>saya adi,umur 16 tahun.<br>dan saya sangat tertarik dengan ngoding dan bermain badminton.<br>
+                saya orang yang cukup santai dan tidak terlalu banyak berbicara,lebih suka mendengarkan dan mempelajari hal-hal baru.<br>
+                saya berharap bisa menjadi seorang developer yang sukses dan terus mengembangkan kemampuan saya dalam bidang teknologi.
+              </p>
+          </div>
+      </div>
+
+      <!-- Skills Section -->
+      <div class="skills">
+          <h3>&mdash;&mdash;Skills</h3>
+          <div class="skills-tabs">
+              <button data-aos="zoom-in" onclick="showTab('tech-stack')" class="active">Tech Stack</button>
+              <button data-aos="zoom-in" onclick="showTab('tools')">Tools</button>
+          </div>
+          <div id="tech-stack" class="skills-content active">
+            <div class="skills-grid">
+              <div data-aos="zoom-in" data-aos-delay="500" class="skill-item">
+                  <i class="fab fa-html5"></i>
+                  <p>HTML</p>
+              </div>
+              <div data-aos="zoom-in" data-aos-delay="600" class="skill-item">
+                  <i class="fab fa-css3-alt"></i>
+                  <p>CSS</p>
+              </div>
+              <div data-aos="zoom-in" data-aos-delay="700" class="skill-item">
+                  <i class="fab fa-php"></i>
+                  <p>PHP</p>
+              </div>
+              <div data-aos="zoom-in" data-aos-delay="800" class="skill-item">
+                  <i class="fab fa-js"></i>
+                  <p>JavaScript</p>
+              </div>
+              <div data-aos="zoom-in" data-aos-delay="900"  class="skill-item">
+                  <i class="fab fa-laravel"></i>
+                  <p>Laravel</p>
+              </div>
+              <div data-aos="zoom-in" data-aos-delay="1000" class="skill-item">
+                  <i class="fas fa-code"></i>
+                  <p>UI/UX</p>
+              </div>
+              <div data-aos="zoom-in" data-aos-delay="1100" class="skill-item">
+                  <i class="fab fa-node-js"></i>
+                  <p>NodeJS</p>
+              </div>
+              <div data-aos="zoom-in" data-aos-delay="1200"  class="skill-item">
+                <i class="fab fa-python"></i>
+                  <p>Python</p>
+              </div>
+              <div data-aos="zoom-in" data-aos-delay="1300" class="skill-item">
+                  <i class="fab fa-bootstrap"></i>
+                  <p>Bootstrap</p>
+              </div>
+              <div data-aos="zoom-in" data-aos-delay="1400" class="skill-item">
+                  <i class="fab fa-react"></i>
+                  <p>ReactJS</p>
+              </div>
+              <div data-aos="zoom-in" data-aos-delay="1500" class="skill-item">
+                <i class="fa fa-gem"></i>
+                <p>Ruby</p>
+            </div>
+          </div>
+      </div>
+  </div>
+          <div id="tools" class="skills-content">
+              <div class="skills-grid">
+                  <div   class="skill-item">
+                      <i class="fab fa-git-alt"></i>
+                      <p>Git</p>
+                  </div>
+                  <div  class="skill-item">
+                      <i class="fab fa-github"></i>
+                      <p>GitHub</p>
+                  </div>
+                  <div class="skill-item">
+                      <i class="fab fa-npm"></i>
+                      <p>NPM</p>
+                  </div>
+                  <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <p>Mysql</p>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="Portfolio" id="portfolio">
+  <div  data-aos="fade-right" class="container1">
+    <h2>My Project&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</h2>
+    <p><u>Explore the projects I've worked on so far</u></p>
+    <div class="projects">
+        <div data-aos="zoom-in" data-aos-delay="500" class="project-card">
+            <img src="1.jpeg" alt="Personal Website" onclick="openModal(this)">
+            <h3>Tim Berners-Lee</h3>
+            <p>    HTML pertama kali dikembangkan oleh Tim Berners-Lee pada tahun 1991 sebagai cara untuk mengatur dan menghubungkan dokumen di web.
+              Versi pertama HTML adalah sederhana dan hanya mendukung teks dan link. Seiring perkembangan web, HTML terus diperbarui,
+              dan saat ini kita menggunakan HTML5, yang memperkenalkan elemen multimedia dan peningkatan fungsionalitas.</p>
+            <button onclick="window.location.href='Halaman1.html'">materi&rarr;</button>
+          </div>
+        <div data-aos="zoom-in" data-aos-delay="600" class="project-card">
+            <img src="2.jpeg" alt="Sahabat Muslim" onclick="openModal(this)">
+            <h3>Håkon Wium Lie</h3>
+            <p>CSS pertama kali diperkenalkan oleh Håkon Wium Lie pada tahun 1994. Tujuannya adalah untuk memisahkan konten dari presentasi, 
+              sehingga memudahkan pengelolaan dan pemeliharaan situs web. Sejak saat itu, CSS terus berkembang, dengan versi terbaru seperti CSS3 
+              yang menawarkan berbagai fitur baru seperti animasi, transisi, dan model layout yang lebih fleksibel.</p>
+            <button onclick="window.location.href='Halaman2.html'">materi&rarr;</button>
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="700"  class="project-card">
+            <img src="5.jpeg" alt="SISTEKDES" onclick="openModal(this)">
+            <h3>Brendan Eich</h3>
+            <p>Brendan Eich menciptakan bahasa pemrograman JavaScript dalam waktu 10 hari pada bulan Mei 1995. Awalnya bahasa ini bernama Mocha, kemudian LiveScript, dan akhirnya menjadi JavaScript. JavaScript dirancang untuk membuat halaman web dinamis dan interaktif.</p>
+            <button onclick="window.location.href='Halaman5.html'">materi&rarr;</button>
+          </div>
+        <div data-aos="zoom-in" data-aos-delay="500" class="project-card">
+            <img src="6.jpg" alt="Bumdesma" onclick="openModal(this)">
+            <h3>Rasmus Lerdorf</h3>
+            <p>Rasmus Lerdorf, seorang programmer Denmark-Kanada,yang menciptakan PHP pada tahun 1994.</p>
+            <button onclick="window.location.href='Halaman3.html'">materi&rarr;</button>
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="600" class="project-card">
+            <img src="4.jpeg" alt="SP2SE" onclick="openModal(this)">
+            <h3>  Bjarne Stroustrup</h3>
+            <p>C++ adalah bahasa pemrograman yang dikembangkan oleh Bjarne Stroustrup pada tahun 1985. C++ adalah bahasa yang berorientasi objek dan merupakan pengembangan dari bahasa C, yang menambahkan fitur-fitur baru seperti kelas dan objek.
+              C++ awalnya dikembangkan sebagai ekstensi dari C untuk mendukung pemrograman berorientasi objek. Seiring berjalannya waktu, C++ telah menjadi salah satu bahasa pemrograman yang paling banyak digunakan di berbagai bidang.
+            </p>
+            <button onclick="window.location.href='Halaman4.html'">materi&rarr;</button>
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="700" class="project-card">
+            <img src="3.jpeg" alt="New Project" onclick="openModal(this)">
+            <h3>Guido van Rossum</h3>
+            <p>Guido van Rossum juga mendirikan Python Institute pada tahun 2003 untuk mempromosikan penggunaan Python dan meningkatkan keterampilan pengembang Python.</p>
+            <button onclick="window.location.href='Halaman6.html'">materi&rarr;</button>
+        </div>
+    </div>
+</div>
+  </div>
+<!-- Modal -->
+<div id="imageModal" class="modal">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+        <img id="modalImage" src="" alt="">
+    </div>
+</div>
+  <div class="blog" id="blog">
+      <div class="list-game-kesukaan">
+        <div class="game-header">
+          <h1 data-aos="fade-right">Game Kesukaan</h1>
+        </div>
+        <div  data-aos="fade-up" data-aos-delay="500" class="game-kesukaan">
+          <img
+            src="ml.jpg"
+            alt="Mobile Legends"
+          />
+          <div class="game-info">
+            <h2>Mobile Legends</h2>
+            <p>
+              Mobile Legends adalah permainan MOBA yang dirancang untuk ponsel. Kedua tim masing-masing berisi lima orang berjuang untuk mencapai dan menghancurkan markas musuh sambil mempertahankan markas mereka sendiri untuk mengendalikan tiga jalur, yang dikenal sebagai jalur "atas", "tengah" dan "bawah", yang menghubung ke setiap markas.
+            </p>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+        <div  data-aos="fade-up" data-aos-delay="600" class="game-kesukaan">
+          <img
+            src="Coc.jpg"
+            alt="EA FC 24"
+          />
+          <div class="game-info">
+            <h2>Clash Of Clans </h2>
+            <p>
+              Clash of Clans adalah permainan multipemain daring yang pemainnya membentuk komunitas yang disebut klan, melatih pasukan, dan menyerang pemain lain untuk mendapatkan sumber daya.
+            </p>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div  data-aos="fade-up" data-aos-delay="700" class="game-kesukaan">
+          <img
+            src="Epep.jpeg"
+            alt="Detroit: Become Human"
+          />
+          <div class="game-info">
+            <h2>Free Fire</h2>
+            <p>
+              Free Fire adalah dimana semua pemain dikerahkan dengan pesawat dan wajib melakukan terjun bebas. Tiap pemain juga harus mencari senjata dan peralatan medis ketika dikirim untuk bertarung melawan pemain lain dan bertahan hidup. Di tengah permainan nanti akan ada pesawat yang lewat dan meluncurkan airdrop dalam bentuk kotak besar berisi rompi anti peluru, helm, senjata khusus seperti AWM, Groza.
+            </p>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <!--social-attach-bar-->
+ <div class="social">
+  <a href="#"><i class="fab fa-whatsapp"></i></a>
+  <div class="co">
+  <a href="#"><i class="fab fa-facebook-f"></i></a>
+  <div class="ba">
+  <a href="#"><i class="fab fa-twitter"></i></a>
+  <div class="color">
+  <a href="#"><i class="fab fa-youtube"></i></a>
+  <div class="web">
+  <a href="#"><i class="fab fa-github"></i></a>
+  <div class="back">
+  <a href="#"><i class="fab fa-instagram"></i></a>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div id="footer"></div>
+   <footer>
+     <div class="footer-content">
+       <p>&copy; 2024 &rbarr; <span>2025</span> <br>daeng&HorizontalLine;<span>adi</span></p>
+       <button id="back-to-top">︽</button>
+     </div>
+    <!--social-->
+  <div class="social-icons">
+  <a href="#"><i class="fab fa-whatsapp"></i></a>
+  <a href="#"><i class="fab fa-facebook-f"></i></a>
+  <a href="#"><i class="fab fa-twitter"></i></a>
+  <a href="#"><i class="fab fa-youtube"></i></a>
+  <a href="#"><i class="fab fa-github"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+
+  </div>
+  </footer>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
